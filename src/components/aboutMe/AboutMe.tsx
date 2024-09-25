@@ -1,4 +1,3 @@
-import { MdOutlineWavingHand } from "react-icons/md";
 
 export default function AboutMe() {
   return (
