@@ -50,7 +50,7 @@ export default function ViandasSaludables() {
     <div className="px-[20px] xl:px-0 text-neutral-900 w-full flex gap-10 flex-wrap-reverse xl:flex-nowrap">
       <div className="w-full xl:w-1/2">
         <div className="flex items-center gap-2">
-          <h3 className="font-medium text-2xl">Viandas Saludables</h3>
+          <h4 className="font-medium text-2xl">Viandas Saludables</h4>
           <FaCarrot size={25} className="text-orange-400" />
         </div>
         <p className="text-xl text-neutral-600 mt-2 mb-2">

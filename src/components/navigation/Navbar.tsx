@@ -5,6 +5,7 @@ import Link from "next/link";
 import { BiMenu } from "react-icons/bi";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
+import { SiReaddotcv } from "react-icons/si";
 
 const navItems = [
   { name: "Inicio", href: "/" },
@@ -52,6 +53,14 @@ export default function Navbar() {
         </ul>
 
         <ul className="space-y-7 mt-10 lg:mt-[100px]">
+          <li>
+            <Link
+              href="/"
+              className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
+            >
+              <SiReaddotcv size={25} />
+            </Link>
+          </li>
           <li>
             <Link
               href="/"

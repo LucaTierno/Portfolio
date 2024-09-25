@@ -25,3 +25,16 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes subtle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Controla la altura del "salto" */
+  }
+}
+
+.subtle-bounce {
+  animation: subtle-bounce 1.5s infinite; /* Duración y repetición */
+}
