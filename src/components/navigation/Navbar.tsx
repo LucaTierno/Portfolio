@@ -9,9 +9,9 @@ import { SiReaddotcv } from "react-icons/si";
 
 const navItems = [
   { name: "Inicio", href: "/" },
-  { name: "Proyectos", href: "#" },
+  { name: "Proyectos", href: "#proyects" },
+  { name: "Sobre mí", href: "#aboutMe" },
   { name: "Contacto", href: "#" },
-  { name: "Sobre mí", href: "#" },
 ];
 
 export default function Navbar() {
@@ -63,24 +63,30 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="/"
+              href="https://github.com/LucaTierno"
               className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaGithub size={25} />
             </Link>
           </li>
           <li>
             <Link
-              href="/"
+              href="https://www.linkedin.com/in/luca-tierno-176a75243/"
               className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin size={25} />
             </Link>
           </li>
           <li>
             <Link
-              href="/"
+              href="https://www.instagram.com/lucatierno/"
               className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaInstagram size={25} />
             </Link>

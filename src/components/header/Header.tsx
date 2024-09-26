@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="h-[100vh] flex flex-col justify-center items-center">
       <div className="mb-[100px]">
-        <p className="font-bold text-neutral-600 mb-[20px] text-lg lg:text-xl ">
+        <p className="font-bold text-neutral-600 mb-[7px] lg:mb-[10px] text-lg lg:text-xl">
           Hola{" "}
           <MdOutlineWavingHand
             size={60}
@@ -34,7 +34,7 @@ export default function Header() {
 
         <div className="flex items-center">
           <div className="w-[12px] h-[12px] rounded-full bg-[#1DB954] mr-2 animate-pulseLight"></div>
-          <p className="text-neutral-800 font-semibold">
+          <p className="text-neutral-600 font-semibold">
             Disponible para trabajar.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function Header() {
             size={40}
           />
           <PiHandWithdraw
-            className="md:hidden text-neutral-400 absolute top-[200px] animate-scroll"
+            className="md:hidden text-neutral-400 absolute top-[170px] animate-scroll"
             size={30}
           />
         </div>
