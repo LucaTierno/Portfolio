@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaCarrot, FaNodeJs } from "react-icons/fa";
@@ -84,24 +86,24 @@ export default function ViandasSaludables() {
           </div>
         </div>
         <div className="flex">
-          <a
-            href="#"
+          <Link
+            href="/proyects/viandas-saludables"
             className="flex text-lg items-center gap-2 bg-neutral-950 text-neutral-200 rounded p-3 font-medium"
           >
             Info Proyecto <GrFormNextLink size={25} />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="xl:w-1/2 relative m-auto">
-        <img
-          src="img/viandas-saludables/pc-login.png"
+        <Image
+          src="/img/viandas-saludables/pc-login.png"
           width={600}
           height={600}
           alt="viandas-saludables-login"
           className="rounded hover:opacity-0 transition-opacity duration-300"
         />
-        <img
-          src="img/viandas-saludables/pc-home.png"
+        <Image
+          src="/img/viandas-saludables/pc-home.png"
           width={600}
           height={600}
           alt="viandas-saludables-home"
