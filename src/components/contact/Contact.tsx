@@ -11,7 +11,7 @@ export default function Contact() {
 
   return (
     <div className="max-w-3xl px-[20px] xl:px-0">
-      <p className="font-medium text-lg text-neutral-500">
+      <p className="font-medium text-base md:text-lg text-neutral-500">
         Buscando oportunidades que me permitan aportar mi experiencia y seguir
         aprendiendo en el proceso.
       </p>
@@ -25,7 +25,7 @@ export default function Contact() {
         </a>
       </div>
       <div className="mt-7">
-        <p className="font-medium text-lg text-neutral-500">
+        <p className="font-medium text-base md:text-lg text-neutral-500">
           También puedes contactarme por
         </p>
         <div className="flex gap-3 items-center lg:hidden">

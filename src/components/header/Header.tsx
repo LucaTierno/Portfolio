@@ -30,12 +30,12 @@ export default function Header() {
               rel="noopener noreferrer"
             >
               <span className="absolute bottom-0">
-                <SiReaddotcv className="text-neutral-900 w-6 ml-5 md:w-16 md:ml-7 lg:w-[70px] subtle-bounce" />
+                <SiReaddotcv className="text-neutral-900 mb-[2px] w-6 ml-6 md:mb-0 md:w-16 md:ml-7 lg:w-[70px] subtle-bounce" />
               </span>
-              <span className="absolute bottom-0 text-neutral-900 text-[7px] ml-[10px] mb-1 md:text-[12px] md:ml-5 xl:text-sm xl:ml-4">
+              <span className="absolute bottom-0 text-neutral-900 text-[9px] ml-[10px] mb-1 md:mb-[6px] md:text-[12px] md:ml-5 lg:text-sm xl:ml-4">
                 Descargar CV
               </span>
-              <span className="absolute bottom-0 h-[2px] bg-green-500 w-[50px] md:h-1 md:w-[100px] lg:w-[110px] ml-2"></span>
+              <span className="absolute bottom-0 h-[2px] bg-green-500 w-[64px] md:h-1 md:w-[100px] lg:w-[110px] ml-2"></span>
             </Link>
           </span>
         </h1>

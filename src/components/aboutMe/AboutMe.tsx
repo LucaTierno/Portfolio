@@ -3,7 +3,7 @@ export default function AboutMe() {
   return (
     <div className="px-[20px] xl:px-0 text-neutral-900 flex flex-col w-full xl:w-1/2">
       <div className="flex items-center gap-2">
-        <h4 className="font-medium text-2xl">
+        <h4 className="font-medium text-xl md:text-xl">
           Hola{" "}
           {/* <MdOutlineWavingHand
               size={35}
@@ -14,7 +14,7 @@ export default function AboutMe() {
           </p>
         </h4>
       </div>
-      <p className="font-medium text-lg mt-1 text-neutral-500">
+      <p className="font-medium text-base md:text-lg mt-1 text-neutral-500">
         Mi nombre es <span className="text-neutral-700">Luca Tierno y soy Frontend Developer,</span> me encargo de crear
         aplicaciones web dinámicas, funcionales y centradas en el usuario. Tengo
         experiencia trabajando con tecnologías modernas como <span className="text-neutral-700">React, Next.js,
