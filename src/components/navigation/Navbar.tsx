@@ -8,10 +8,10 @@ import { IoCloseSharp } from "react-icons/io5";
 import { SiReaddotcv } from "react-icons/si";
 
 const navItems = [
-  { name: "Inicio", href: "/" },
+  { name: "Inicio", href: "#header" },
   { name: "Proyectos", href: "#proyects" },
   { name: "Sobre mí", href: "#aboutMe" },
-  { name: "Contacto", href: "#" },
+  { name: "Contacto", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -55,8 +55,10 @@ export default function Navbar() {
         <ul className="space-y-7 mt-10 lg:mt-[100px]">
           <li>
             <Link
-              href="/"
+              href="https://drive.google.com/file/d/1_L5r8WjcYXqM3c191ZNT0gaOh6LMAo2p/view?usp=drive_link"
               className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <SiReaddotcv size={25} />
             </Link>

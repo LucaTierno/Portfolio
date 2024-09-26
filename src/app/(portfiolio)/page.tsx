@@ -30,7 +30,7 @@ export default function Home() {
           <AboutMe />
         </section>
 
-        <section className="mb-[50px]" id="aboutMe">
+        <section className="mb-[50px]" id="contact">
           <h3 className="pt-[70px] mt-[100px] mb-[20px] xl:mb-[50px] font-bold text-neutral-900 text-3xl md:text-5xl lg:text-7xl text-center xl:text-start">
             CONTACTO<span className="text-green-500">.</span>
           </h3>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
   MdSubdirectoryArrowLeft,
@@ -29,12 +30,30 @@ export default function Contact() {
         </p>
         <div className="flex gap-3 items-center lg:hidden">
           <MdSubdirectoryArrowRight size={30} className="text-neutral-600" />
-          <FaLinkedin className="text-neutral-600" />
-          <FaGithub className="text-neutral-600" />
-          <FaInstagram className="text-neutral-600" />
+          <Link
+            href="https://www.linkedin.com/in/luca-tierno-176a75243/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="text-neutral-600" />
+          </Link>
+          <Link
+            href="https://github.com/LucaTierno"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="text-neutral-600" />
+          </Link>
+          <Link
+            href="https://www.instagram.com/lucatierno/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-neutral-600" />
+          </Link>
         </div>
         <MdSubdirectoryArrowLeft
-          size={50}
+          size={80}
           className="text-neutral-600 hidden lg:flex"
         />
       </div>
