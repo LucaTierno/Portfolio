@@ -17,6 +17,10 @@ const navItems = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <button
@@ -25,9 +29,9 @@ export default function Navbar() {
         aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
       >
         {isOpen ? (
-          <IoCloseSharp className="w-6 h-6" />
+          <IoCloseSharp className="w-6 h-6 text-neutral-100" />
         ) : (
-          <BiMenu className="w-6 h-6" />
+          <BiMenu className="w-6 h-6 text-neutral-100" />
         )}
       </button>
 
@@ -45,6 +49,7 @@ export default function Navbar() {
               <Link
                 href={item.href}
                 className="flex items-center font-semibold space-x-3 hover:text-green-500 transition-colors lg:-rotate-90"
+                onClick={closeNavbar}
               >
                 <span>{item.name}</span>
               </Link>
@@ -59,6 +64,7 @@ export default function Navbar() {
               className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={closeNavbar}
             >
               <SiReaddotcv size={25} />
             </Link>
@@ -69,6 +75,7 @@ export default function Navbar() {
               className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={closeNavbar}
             >
               <FaGithub size={25} />
             </Link>
@@ -79,6 +86,7 @@ export default function Navbar() {
               className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={closeNavbar}
             >
               <FaLinkedin size={25} />
             </Link>
@@ -89,6 +97,7 @@ export default function Navbar() {
               className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={closeNavbar}
             >
               <FaInstagram size={25} />
             </Link>
@@ -99,7 +108,7 @@ export default function Navbar() {
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-30 lg:hidden"
-          onClick={() => setIsOpen(false)}
+          onClick={closeNavbar}
         ></div>
       )}
     </>

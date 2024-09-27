@@ -77,7 +77,7 @@ export default function ViandaSaludableProject() {
         Volver
         <FaArrowLeftLong className="w-5 md:w-7" />
       </Link>
-      <main className="px-[20px] lg:pr-[100px] lg:pl-[250px] py-14">
+      <main className="px-[20px] lg:pr-[100px] lg:pl-[250px] py-9 md:py-14">
         <div className="mb-[30px] xl:mb-[50px]">
           <p className="pt-[30px] font-semibold text-sm md:text-lg text-center lg:text-start">
             PROYECTO <span className="text-green-500">/</span>
@@ -95,13 +95,13 @@ export default function ViandaSaludableProject() {
         </div>
 
         <div className="mb-7 max-w-6xl">
-          <h2 className="text-2xl font-semibold mb-1 md:mb-2 text-neutral-900">
+          <h2 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2 text-neutral-900">
             Descripción del Proyecto<span className="text-green-500">.</span>
           </h2>
-          <p className="text-lg text-neutral-500">
+          <p className="text-base md:text-lg text-neutral-500">
             Desarrollé un sistema de gestión integral para un local de viandas
             saludables. Esta aplicación web permite a los propietarios
-            administrar pedidos, clientes, ususarios, inventario, y entregas de
+            administrar pedidos, clientes, usuarios, inventario y entregas de
             manera eficiente, mejorando significativamente sus operaciones
             diarias.
           </p>
@@ -110,12 +110,12 @@ export default function ViandaSaludableProject() {
         <div className="flex flex-col xl:flex-row">
           <div className="w-full xl:w-1/2">
             <div className="mb-7">
-              <h3 className="text-2xl font-semibold mb-1 md:mb-2">
+              <h3 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2">
                 Características Principales
                 <span className="text-green-500">.</span>
               </h3>
 
-              <ul className="list-disc list-inside text-lg space-y-2 text-neutral-500">
+              <ul className="list-disc list-inside space-y-1 md:space-y-2 text-neutral-500 text-base md:text-lg">
                 <li> Gestión de pedidos en tiempo real</li>
                 <li>Sistema de inventario </li>
                 <li>Planificación de rutas de entrega optimizadas</li>
@@ -125,7 +125,7 @@ export default function ViandaSaludableProject() {
             </div>
 
             <div className="mb-7">
-              <h3 className="text-2xl font-semibold mb-3">
+              <h3 className="text-xl md:text-2xl font-semibold mb-3">
                 Tecnologías<span className="text-green-500">.</span>
               </h3>
               <div className="flex gap-2 items-center justify-between sm:justify-start ">
@@ -146,13 +146,13 @@ export default function ViandaSaludableProject() {
             </div>
 
             <div className="">
-              <h2 className="text-2xl font-semibold mb-1 md:mb-2">
+              <h2 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2">
                 Proceso de Desarrollo<span className="text-green-500">.</span>
               </h2>
-              <p className="text-lg mb-1 md:mb-2 text-neutral-500">
+              <p className="text-base md:text-lg mb-1 md:mb-2 text-neutral-500">
                 El desarrollo de este proyecto se llevó a cabo en varias etapas:
               </p>
-              <ol className="list-decimal list-inside text-lg space-y-2 text-neutral-500">
+              <ol className="list-decimal list-inside text-base md:text-lg space-y-1 md:space-y-2 text-neutral-500">
                 <li>Análisis de requisitos y planificación</li>
                 <li>Diseño de la arquitectura y la base de datos</li>
                 <li>Desarrollo del backend con Prisma y PostgreSQL</li>
@@ -190,13 +190,13 @@ export default function ViandaSaludableProject() {
               <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 bg-green-500 hover:bg-green-600 text-white hover:text-white" />
             </Carousel>
             <div className="">
-              <h2 className="text-2xl font-semibold mb-1 md:mb-2">
+              <h2 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2">
                 Equipo de Trabajo<span className="text-green-500">.</span>
               </h2>
-              <p className="text-lg mb-1 md:mb-2 text-neutral-500">
+              <p className="text-base md:text-lg mb-1 md:mb-2 text-neutral-500">
                 El equipo de desarrollo esta compuesto por:
               </p>
-              <ul className="list-disc list-inside text-lg space-y-2 text-neutral-500">
+              <ul className="list-disc list-inside text-base md:text-lg space-y-2 text-neutral-500">
                 <li>2 - Desarrolladores Full Stack</li>
               </ul>
             </div>
