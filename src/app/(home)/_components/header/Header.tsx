@@ -25,7 +25,7 @@ export default function Header() {
           <span className="relative">
             Frontend{" "}
             <Link
-              href="https://drive.google.com/file/d/1_L5r8WjcYXqM3c191ZNT0gaOh6LMAo2p/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1eHQKzcy2l4QEi_6TWn7GAW4YPX-1u-mm/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

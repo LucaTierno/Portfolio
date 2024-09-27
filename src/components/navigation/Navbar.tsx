@@ -60,7 +60,7 @@ export default function Navbar() {
         <ul className="space-y-7 mt-10 lg:mt-[100px]">
           <li>
             <Link
-              href="https://drive.google.com/file/d/1_L5r8WjcYXqM3c191ZNT0gaOh6LMAo2p/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1eHQKzcy2l4QEi_6TWn7GAW4YPX-1u-mm/view?usp=sharing"
               className="flex items-center lg:justify-center font-semibold space-x-3 hover:text-green-500 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
