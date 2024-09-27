@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import {
   SiJavascript,
   SiNextdotjs,
@@ -19,8 +18,9 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
+import { FaCarrot, FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 export default function ViandaSaludableProject() {
   const projectImages = [
@@ -75,19 +75,28 @@ export default function ViandaSaludableProject() {
         className="z-20 py-1 px-2 mt-2 ml-2 fixed flex text-sm md:text-lg items-center gap-1 md:gap-2 bg-neutral-950 text-neutral-200 rounded md:p-3 font-medium md:mt-5 md:ml-5"
       >
         Volver
-        <ArrowLeft className="w-5 md:w-7" />
+        <FaArrowLeftLong className="w-5 md:w-7" />
       </Link>
       <main className="px-[20px] lg:pr-[100px] lg:pl-[250px] py-14">
-        <h1 className="pt-[30px] mb-[30px] xl:mb-[50px] font-bold text-neutral-900 text-3xl md:text-5xl lg:text-7xl text-center xl:text-start">
-          <p className="text-sm md:text-lg">
+        <div className="mb-[30px] xl:mb-[50px]">
+          <p className="pt-[30px] font-semibold text-sm md:text-lg text-center lg:text-start">
             PROYECTO <span className="text-green-500">/</span>
           </p>
-          VIANDAS SALUDABLES<span className="text-green-500">.</span>
-        </h1>
+          <h1 className="flex flex-wrap gap-x-1 md:gap-x-3 items-center justify-center lg:justify-start font-bold text-neutral-900 text-3xl md:text-5xl lg:text-7xl text-center lg:text-start">
+            <span>VIANDAS</span>
+            <span className="flex items-center">
+              SALUDABLES
+              <FaCarrot className="ml-1 text-orange-400 text-3xl md:ml-2 md:text-5xl lg:text-7xl" />
+            </span>
+          </h1>
+            <p className="mt-1 text-center text-sm md:text-base w-fit m-auto lg:inline-block  lg:text-start bg-blue-500 text-white rounded px-2 py-1 font-bold">
+              Desarrollo de Software
+            </p>
+        </div>
 
         <div className="mb-7 max-w-6xl">
           <h2 className="text-2xl font-semibold mb-1 md:mb-2 text-neutral-900">
-            Descripción del Proyecto
+            Descripción del Proyecto<span className="text-green-500">.</span>
           </h2>
           <p className="text-lg text-neutral-500">
             Desarrollé un sistema de gestión integral para un local de viandas
@@ -103,6 +112,7 @@ export default function ViandaSaludableProject() {
             <div className="mb-7">
               <h3 className="text-2xl font-semibold mb-1 md:mb-2">
                 Características Principales
+                <span className="text-green-500">.</span>
               </h3>
 
               <ul className="list-disc list-inside text-lg space-y-2 text-neutral-500">
@@ -115,7 +125,9 @@ export default function ViandaSaludableProject() {
             </div>
 
             <div className="mb-7">
-              <h3 className="text-2xl font-semibold mb-3">Tecnologías</h3>
+              <h3 className="text-2xl font-semibold mb-3">
+                Tecnologías<span className="text-green-500">.</span>
+              </h3>
               <div className="flex gap-2 items-center justify-between sm:justify-start ">
                 {techs.map((tech, index) => (
                   <div key={index} className="relative group">
@@ -135,7 +147,7 @@ export default function ViandaSaludableProject() {
 
             <div className="">
               <h2 className="text-2xl font-semibold mb-1 md:mb-2">
-                Proceso de Desarrollo
+                Proceso de Desarrollo<span className="text-green-500">.</span>
               </h2>
               <p className="text-lg mb-1 md:mb-2 text-neutral-500">
                 El desarrollo de este proyecto se llevó a cabo en varias etapas:
@@ -179,7 +191,7 @@ export default function ViandaSaludableProject() {
             </Carousel>
             <div className="">
               <h2 className="text-2xl font-semibold mb-1 md:mb-2">
-                Equipo de Trabajo
+                Equipo de Trabajo<span className="text-green-500">.</span>
               </h2>
               <p className="text-lg mb-1 md:mb-2 text-neutral-500">
                 El equipo de desarrollo esta compuesto por:
