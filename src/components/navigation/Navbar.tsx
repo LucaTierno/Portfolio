@@ -43,7 +43,7 @@ export default function Navbar() {
         z-40
       `}
       >
-        <ul className="space-y-4 lg:space-y-28 mt-[70px]">
+        <ul className="space-y-4 lg:space-y-24 mt-[70px] lg:mt-[20px]">
           {navItems.map((item) => (
             <li key={item.name}>
               <Link
@@ -57,7 +57,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <ul className="space-y-7 mt-10 lg:mt-[100px]">
+        <ul className="space-y-7 mt-10 lg:mt-[70px]">
           <li>
             <Link
               href="https://drive.google.com/file/d/1eHQKzcy2l4QEi_6TWn7GAW4YPX-1u-mm/view?usp=sharing"
