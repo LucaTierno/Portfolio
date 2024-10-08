@@ -57,7 +57,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <ul className="space-y-7 mt-10 lg:mt-[70px]">
+        <ul className="space-y-7 mt-10 lg:mt-[170px]">
           <li>
             <Link
               href="https://drive.google.com/file/d/1eHQKzcy2l4QEi_6TWn7GAW4YPX-1u-mm/view?usp=sharing"
