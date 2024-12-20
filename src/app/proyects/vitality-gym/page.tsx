@@ -10,6 +10,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import {
+  SiExpress,
   SiJavascript,
   SiNextdotjs,
   SiPrisma,
@@ -17,26 +18,30 @@ import {
   SiShadcnui,
   SiTailwindcss,
   SiTypescript,
+  SiZod,
 } from "react-icons/si";
-import { FaCarrot, FaNodeJs } from "react-icons/fa";
+import { FaCarrot, FaNodeJs, FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { Dumbbell } from "lucide-react";
 
 export default function ViandaSaludableProject() {
   const projectImages = [
-    "/img/viandas-saludables/pc-login.png",
-    "/img/viandas-saludables/pc-panel-control.png",
-    "/img/viandas-saludables/pc-dishes.png",
-    "/img/viandas-saludables/pc-menus.png",
-    "/img/viandas-saludables/pc-delivery.png",
-    "/img/viandas-saludables/pc-clients.png",
-    "/img/viandas-saludables/pc-ingredients.png",
-    "/img/viandas-saludables/pc-list-buy.png",
-    "/img/viandas-saludables/pc-home.png",
+    "/img/vitality-gym/pc-login.png",
+    "/img/vitality-gym/pc-exercises.png",
+    "/img/vitality-gym/pc-routines.png",
+    "/img/vitality-gym/pc-clients.png",
+    "/img/vitality-gym/pc-home.png",
+    "/img/vitality-gym/pc-calc.png",
+    "/img/vitality-gym/pc-home-client.png",
+    "/img/vitality-gym/phones-clients.png",
   ];
 
   const techs = [
-    { icon: <SiNextdotjs size={30} className="text-black" />, name: "Next.js" },
+    {
+      icon: <FaReact size={30} className="text-[#61DAFB]" />,
+      name: "React",
+    },
     {
       icon: <SiJavascript size={30} className="text-[#F7DF1E] bg-black" />,
       name: "JavaScript",
@@ -45,22 +50,33 @@ export default function ViandaSaludableProject() {
       icon: <SiTypescript size={30} className="text-[#3178C6]" />,
       name: "TypeScript",
     },
-    { icon: <SiPrisma size={30} className="text-[#2D3748]" />, name: "Prisma" },
     {
       icon: <FaNodeJs size={30} className="text-[#339933]" />,
       name: "Node.js",
+    },
+    {
+      icon: <SiExpress size={30} className="text-[#000000]" />,
+      name: "Express",
+    },
+    {
+      icon: <SiZod size={30} className="text-[#2F2F2F]" />,
+      name: "Zod",
     },
     {
       icon: <SiTailwindcss size={30} className="text-[#06B6D4]" />,
       name: "Tailwind CSS",
     },
     {
-      icon: <SiRailway size={30} className="text-[#0B0D0E]" />,
-      name: "Railway",
+      icon: <SiPrisma size={30} className="text-[#2D3748]" />,
+      name: "Prisma",
     },
     {
       icon: <BiLogoPostgresql size={40} className="text-[#336791]" />,
       name: "PostgreSQL",
+    },
+    {
+      icon: <SiRailway size={30} className="text-[#0B0D0E]" />,
+      name: "Railway",
     },
     {
       icon: <SiShadcnui size={30} className="text-gray-400" />,
@@ -80,13 +96,16 @@ export default function ViandaSaludableProject() {
       <main className="px-[20px] lg:pr-[100px] lg:pl-[250px] py-9 md:py-14">
         <div className="mb-[30px] xl:mb-[50px]">
           <p className="pt-[30px] font-semibold text-sm md:text-lg text-center lg:text-start">
-            PROYECTO <span className="text-green-500">/</span>
+            PROYECTO <span className="text-blue-500">/</span>
           </p>
           <h1 className="flex flex-wrap gap-x-1 md:gap-x-3 items-center justify-center lg:justify-start font-bold text-neutral-900 text-3xl md:text-5xl lg:text-7xl text-center lg:text-start">
-            <span>VIANDAS</span>
+            <span>VITALITY</span>
             <span className="flex items-center">
-              SALUDABLES
-              <FaCarrot className="ml-1 text-orange-400 text-3xl md:ml-2 md:text-5xl lg:text-7xl" />
+              GYM
+              <Dumbbell
+                size={65}
+                className="ml-1 text-blue-500 text-3xl md:ml-2 md:text-5xl lg:text-7xl"
+              />
             </span>
           </h1>
           <p className="mt-1 text-center text-sm md:text-base w-fit m-auto lg:inline-block  lg:text-start bg-blue-500 text-white rounded px-2 py-1 font-bold">
@@ -96,14 +115,16 @@ export default function ViandaSaludableProject() {
 
         <div className="mb-7 max-w-6xl">
           <h2 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2 text-neutral-900">
-            Descripción del Proyecto<span className="text-green-500">.</span>
+            Descripción del Proyecto<span className="text-blue-500">.</span>
           </h2>
           <p className="text-base md:text-lg text-neutral-500">
-            Desarrollé un sistema de gestión integral para un local de viandas
-            saludables. Esta aplicación web permite a los propietarios
-            administrar pedidos, clientes, usuarios, inventario y entregas de
-            manera eficiente, mejorando significativamente sus operaciones
-            diarias.
+            Desarrollé un sistema de gestión completo para un gimnasio. Esta
+            aplicación web facilita la administración de clientes, planes de
+            entrenamiento, rutinas personalizadas, y el seguimiento del progreso
+            de los usuarios, optimizando el tiempo de los entrenadores y
+            mejorando la experiencia para los clientes. Tambien los clientes
+            cuentan con una calculadora saludable para calcular sus macros
+            diarios.
           </p>
         </div>
 
@@ -112,21 +133,26 @@ export default function ViandaSaludableProject() {
             <div className="mb-7">
               <h3 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2">
                 Características Principales
-                <span className="text-green-500">.</span>
+                <span className="text-blue-500">.</span>
               </h3>
 
               <ul className="list-disc list-inside space-y-1 md:space-y-2 text-neutral-500 text-base md:text-lg">
-                <li> Gestión de pedidos en tiempo real</li>
-                <li>Sistema de inventario </li>
-                <li>Planificación de rutas de entrega optimizadas</li>
-                <li>Panel de control para análisis de ventas y tendencias</li>
-                <li>Interfaz de usuario intuitiva y responsive</li>
+                <li>
+                  Gestión de clientes, planes de entrenamiento, rutinas y
+                  ejercicios
+                </li>
+                <li>
+                  Calculadora de salud para medir el IMC, calorías y proteínas
+                </li>
+                <li>Impresión de rutinas para los clientes</li>
+                <li>Diseño optimizado para dispositivos móviles, ideal para su uso en el gimnasio</li>
+                <li>Interfaz intuitiva para entrenadores y clientes</li>
               </ul>
             </div>
 
             <div className="mb-7">
               <h3 className="text-xl md:text-2xl font-semibold mb-3">
-                Tecnologías<span className="text-green-500">.</span>
+                Tecnologías<span className="text-blue-500">.</span>
               </h3>
               <div className="flex gap-2 items-center justify-between sm:justify-start w-full overflow-x-auto">
                 {techs.map((tech, index) => (
@@ -147,7 +173,7 @@ export default function ViandaSaludableProject() {
 
             <div className="">
               <h2 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2">
-                Proceso de Desarrollo<span className="text-green-500">.</span>
+                Proceso de Desarrollo<span className="text-blue-500">.</span>
               </h2>
               <p className="text-base md:text-lg mb-1 md:mb-2 text-neutral-500">
                 El desarrollo de este proyecto se llevó a cabo en varias etapas:
@@ -186,12 +212,12 @@ export default function ViandaSaludableProject() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 bg-green-500 hover:bg-green-600 text-white hover:text-white" />
-              <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 bg-green-500 hover:bg-green-600 text-white hover:text-white" />
+              <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white hover:text-white" />
+              <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white hover:text-white" />
             </Carousel>
             <div className="">
               <h2 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2">
-                Equipo de Trabajo<span className="text-green-500">.</span>
+                Equipo de Trabajo<span className="text-blue-500">.</span>
               </h2>
               <p className="text-base md:text-lg mb-1 md:mb-2 text-neutral-500">
                 El equipo de desarrollo esta compuesto por:
