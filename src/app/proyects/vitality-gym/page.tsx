@@ -12,7 +12,6 @@ import Link from "next/link";
 import {
   SiExpress,
   SiJavascript,
-  SiNextdotjs,
   SiPrisma,
   SiRailway,
   SiShadcnui,
@@ -20,7 +19,7 @@ import {
   SiTypescript,
   SiZod,
 } from "react-icons/si";
-import { FaCarrot, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { Dumbbell } from "lucide-react";
