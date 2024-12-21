@@ -23,6 +23,7 @@ import { FaNodeJs, FaReact } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { Dumbbell } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function ViandaSaludableProject() {
   const projectImages = [
@@ -33,6 +34,12 @@ export default function ViandaSaludableProject() {
     "/img/vitality-gym/pc-home.png",
     "/img/vitality-gym/pc-calc.png",
     "/img/vitality-gym/pc-home-client.png",
+    "/img/vitality-gym/phones-clients.png",
+  ];
+
+  const phonesImages = [
+    "/img/vitality-gym/phone-calc.png",
+    "/img/vitality-gym/phone-home-client.png",
     "/img/vitality-gym/phones-clients.png",
   ];
 
@@ -92,7 +99,7 @@ export default function ViandaSaludableProject() {
         Volver
         <FaArrowLeftLong className="w-5 md:w-7" />
       </Link>
-      <main className="px-[20px] lg:pr-[100px] lg:pl-[250px] py-9 md:py-14">
+      <main className="px-[20px] lg:pr-[150px] lg:pl-[250px] py-9 md:py-14">
         <div className="mb-[30px] xl:mb-[50px]">
           <p className="pt-[30px] font-semibold text-sm md:text-lg text-center lg:text-start">
             PROYECTO <span className="text-blue-500">/</span>
@@ -216,7 +223,7 @@ export default function ViandaSaludableProject() {
               <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white hover:text-white" />
               <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white hover:text-white" />
             </Carousel>
-            <div className="">
+            <div>
               <h2 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2">
                 Equipo de Trabajo<span className="text-blue-500">.</span>
               </h2>
@@ -226,6 +233,77 @@ export default function ViandaSaludableProject() {
               <ul className="list-disc list-inside text-base md:text-lg space-y-2 text-neutral-500">
                 <li>2 - Desarrolladores Full Stack</li>
               </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col-reverse xl:flex-row">
+          <Carousel className="w-full m-auto max-w-xl">
+            <CarouselContent>
+              {phonesImages.map((img, index) => (
+                <CarouselItem key={index}>
+                  <Card className="bg-slate-50 border-none shadow-none">
+                    <CardContent className="p-0 flex items-center justify-center">
+                      <div className="relative aspect-square w-full">
+                        <Image
+                          src={img}
+                          alt={`Captura de pantalla ${
+                            index + 1
+                          } del proyecto de viandas saludables`}
+                          fill
+                          className="object-contain rounded-lg"
+                        />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white hover:text-white" />
+            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white hover:text-white" />
+          </Carousel>
+
+          <div className="xl:w-1/2 mt-[25px] xl:mt-[100px] xl:ml-5">
+            <h3 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2">
+              Vista del cliente
+              <span className="text-blue-500">.</span>
+            </h3>
+            <p className="text-base md:text-lg text-neutral-500 xl:w-[80%]">
+              La aplicación fue diseñada con una interfaz moderna, amigable y
+              fácil de usar, especialmente optimizada para dispositivos móviles.
+              Esto permite a los usuarios disfrutar de una experiencia fluida y
+              eficiente, asegurando que puedan acceder rápidamente a todos sus
+              ejercicios en las sesiones de entrenamiento.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-center items-center">
+          <div className="xl:w-1/2">
+            <h3 className="text-xl md:text-2xl font-semibold mb-1 md:mb-2">
+              Impresión de rutinas<span className="text-blue-500">.</span>
+            </h3>
+            <p className="text-base md:text-lg text-neutral-500">
+              La aplicación permite a los entrenadores imprimir rutinas de
+              entrenamiento personalizadas para sus clientes. Esto facilita la
+              comunicación entre el entrenador y el cliente, y garantiza que los
+              ejercicios se realicen correctamente.
+            </p>
+            <div className="flex flex-col justify-center items-center">
+              <div className="m-auto mt-[20px]">
+                <Image
+                  alt="routine-pdf"
+                  src="/img/vitality-gym/routine.png"
+                  width={200}
+                  height={200}
+                  className="rounded-lg shadow-lg"
+                />
+              </div>
+              <a href="/img/vitality-gym/routine.png" download="routine.png">
+                <Button className="rounded bg-blue-500 hover:bg-blue-600 mt-2">
+                  Download
+                </Button>
+              </a>
             </div>
           </div>
         </div>

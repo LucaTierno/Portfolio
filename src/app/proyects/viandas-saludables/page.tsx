@@ -77,7 +77,7 @@ export default function ViandaSaludableProject() {
         Volver
         <FaArrowLeftLong className="w-5 md:w-7" />
       </Link>
-      <main className="px-[20px] lg:pr-[100px] lg:pl-[250px] py-9 md:py-14">
+      <main className="px-[20px] lg:pr-[150px] lg:pl-[250px] py-9 md:py-14">
         <div className="mb-[30px] xl:mb-[50px]">
           <p className="pt-[30px] font-semibold text-sm md:text-lg text-center lg:text-start">
             PROYECTO <span className="text-green-500">/</span>
