@@ -8,7 +8,6 @@ import { GrFormNextLink } from "react-icons/gr";
 import {
   SiExpress,
   SiJavascript,
-  SiNextdotjs,
   SiPrisma,
   SiRailway,
   SiShadcnui,

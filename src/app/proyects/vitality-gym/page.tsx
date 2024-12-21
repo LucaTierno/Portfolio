@@ -118,11 +118,10 @@ export default function ViandaSaludableProject() {
             Descripción del Proyecto<span className="text-blue-500">.</span>
           </h2>
           <p className="text-base md:text-lg text-neutral-500">
-            Desarrollé un sistema de gestión completo para un gimnasio. Esta
-            aplicación web facilita la administración de clientes, planes de
-            entrenamiento, rutinas personalizadas, y el seguimiento del progreso
-            de los usuarios, optimizando el tiempo de los entrenadores y
-            mejorando la experiencia para los clientes. Tambien los clientes
+            Esta aplicación web facilita la administración de clientes, planes
+            de entrenamiento, rutinas personalizadas y el seguimiento del
+            progreso de los usuarios, optimizando el tiempo de los entrenadores
+            y mejorando la experiencia para los clientes. Tambien los clientes
             cuentan con una calculadora saludable para calcular sus macros
             diarios.
           </p>
@@ -145,7 +144,10 @@ export default function ViandaSaludableProject() {
                   Calculadora de salud para medir el IMC, calorías y proteínas
                 </li>
                 <li>Impresión de rutinas para los clientes</li>
-                <li>Diseño optimizado para dispositivos móviles, ideal para su uso en el gimnasio</li>
+                <li>
+                  Diseño optimizado para dispositivos móviles, ideal para su uso
+                  en el gimnasio
+                </li>
                 <li>Interfaz intuitiva para entrenadores y clientes</li>
               </ul>
             </div>
@@ -183,7 +185,7 @@ export default function ViandaSaludableProject() {
                 <li>Diseño de la arquitectura y la base de datos</li>
                 <li>Desarrollo del backend con Prisma y PostgreSQL</li>
                 <li>Creación de la interfaz de usuario con React y Next.js</li>
-                <li>Implementación de funcionalidades clave</li>
+                <li>Conexión medienate Axios</li>
                 <li>Pruebas y optimización</li>
                 <li>Despliegue y capacitación del cliente</li>
               </ol>
