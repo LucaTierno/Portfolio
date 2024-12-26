@@ -65,7 +65,23 @@ export default function VitalityGym() {
   ];
 
   return (
-    <div className="px-[20px] xl:px-0 text-neutral-900 w-full flex gap-10 flex-wrap-reverse xl:flex-nowrap">
+    <div className="px-[20px] xl:px-0 text-neutral-900 w-full flex gap-10 flex-wrap xl:flex-nowrap">
+      <div className="xl:w-1/2 relative m-auto">
+        <Image
+          src="/img/vitality-gym/pc-login.png"
+          width={600}
+          height={600}
+          alt="vitality-gym-login"
+          className="rounded hover:opacity-0 transition-opacity duration-300"
+        />
+        <Image
+          src="/img/vitality-gym/pc-home-client.png"
+          width={600}
+          height={600}
+          alt="vitality-gym-exercises"
+          className="rounded absolute top-0 opacity-0 hover:opacity-100 transition-opacity duration-300"
+        />
+      </div>
       <div className="w-full xl:w-1/2">
         <div className="flex items-center gap-2">
           <h4 className="font-medium text-2xl">Vitality Gym</h4>
@@ -110,22 +126,6 @@ export default function VitalityGym() {
             Info Proyecto <GrFormNextLink size={25} />
           </Link>
         </div>
-      </div>
-      <div className="xl:w-1/2 relative m-auto">
-        <Image
-          src="/img/vitality-gym/pc-login.png"
-          width={600}
-          height={600}
-          alt="vitality-gym-login"
-          className="rounded hover:opacity-0 transition-opacity duration-300"
-        />
-        <Image
-          src="/img/vitality-gym/pc-home-client.png"
-          width={600}
-          height={600}
-          alt="vitality-gym-exercises"
-          className="rounded absolute top-0 opacity-0 hover:opacity-100 transition-opacity duration-300"
-        />
       </div>
     </div>
   );

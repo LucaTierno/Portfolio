@@ -72,7 +72,7 @@ export default function ViandaSaludableProject() {
     <>
       <Link
         href={"/"}
-        className="z-20 py-1 px-2 mt-2 ml-2 fixed flex text-sm md:text-lg items-center gap-1 md:gap-2 bg-neutral-950 text-neutral-200 rounded md:p-3 font-medium md:mt-5 md:ml-5"
+        className="z-20 py-1 px-2 mt-2 ml-2 fixed flex text-sm md:text-lg items-center gap-1 md:gap-2 bg-neutral-950 text-neutral-200 rounded md:p-2 font-medium md:mt-5 md:ml-5"
       >
         Volver
         <FaArrowLeftLong className="w-5 md:w-7" />

@@ -34,7 +34,6 @@ export default function ViandaSaludableProject() {
     "/img/vitality-gym/pc-home.png",
     "/img/vitality-gym/pc-calc.png",
     "/img/vitality-gym/pc-home-client.png",
-    "/img/vitality-gym/phones-clients.png",
   ];
 
   const phonesImages = [
@@ -94,7 +93,7 @@ export default function ViandaSaludableProject() {
     <>
       <Link
         href={"/"}
-        className="z-20 py-1 px-2 mt-2 ml-2 fixed flex text-sm md:text-lg items-center gap-1 md:gap-2 bg-neutral-950 text-neutral-200 rounded md:p-3 font-medium md:mt-5 md:ml-5"
+        className="z-20 py-1 px-2 mt-2 ml-2 fixed flex text-sm md:text-lg items-center gap-1 md:gap-2 bg-neutral-950 text-neutral-200 rounded md:p-2 font-medium md:mt-5 md:ml-5"
       >
         Volver
         <FaArrowLeftLong className="w-5 md:w-7" />
@@ -300,7 +299,7 @@ export default function ViandaSaludableProject() {
                 />
               </div>
               <a href="/img/vitality-gym/routine.png" download="routine.png">
-                <Button className="rounded bg-blue-500 hover:bg-blue-600 mt-2">
+                <Button className="rounded bg-blue-500 hover:bg-blue-600 mt-3">
                   Download
                 </Button>
               </a>
