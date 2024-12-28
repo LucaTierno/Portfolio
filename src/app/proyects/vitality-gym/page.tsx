@@ -9,86 +9,17 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import {
-  SiExpress,
-  SiJavascript,
-  SiPrisma,
-  SiRailway,
-  SiShadcnui,
-  SiTailwindcss,
-  SiTypescript,
-  SiZod,
-} from "react-icons/si";
-import { FaNodeJs, FaReact } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { Dumbbell } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+//? Importación de las tecnologías utilizadas en el proyecto
+import { techs } from "./_components/Techs";
+
+//? Importación de las imágenes del proyecto
+import { pcImages, phonesImages } from "./_components/proyectImages";
+
 export default function ViandaSaludableProject() {
-  const projectImages = [
-    "/img/vitality-gym/pc-login.png",
-    "/img/vitality-gym/pc-exercises.png",
-    "/img/vitality-gym/pc-routines.png",
-    "/img/vitality-gym/pc-clients.png",
-    "/img/vitality-gym/pc-home.png",
-    "/img/vitality-gym/pc-calc.png",
-    "/img/vitality-gym/pc-home-client.png",
-  ];
-
-  const phonesImages = [
-    "/img/vitality-gym/phone-calc.png",
-    "/img/vitality-gym/phone-home-client.png",
-    "/img/vitality-gym/phones-clients.png",
-  ];
-
-  const techs = [
-    {
-      icon: <FaReact size={30} className="text-[#61DAFB]" />,
-      name: "React",
-    },
-    {
-      icon: <SiJavascript size={30} className="text-[#F7DF1E] bg-black" />,
-      name: "JavaScript",
-    },
-    {
-      icon: <SiTypescript size={30} className="text-[#3178C6]" />,
-      name: "TypeScript",
-    },
-    {
-      icon: <FaNodeJs size={30} className="text-[#339933]" />,
-      name: "Node.js",
-    },
-    {
-      icon: <SiExpress size={30} className="text-[#000000]" />,
-      name: "Express",
-    },
-    {
-      icon: <SiZod size={30} className="text-[#2F2F2F]" />,
-      name: "Zod",
-    },
-    {
-      icon: <SiTailwindcss size={30} className="text-[#06B6D4]" />,
-      name: "Tailwind CSS",
-    },
-    {
-      icon: <SiPrisma size={30} className="text-[#2D3748]" />,
-      name: "Prisma",
-    },
-    {
-      icon: <BiLogoPostgresql size={40} className="text-[#336791]" />,
-      name: "PostgreSQL",
-    },
-    {
-      icon: <SiRailway size={30} className="text-[#0B0D0E]" />,
-      name: "Railway",
-    },
-    {
-      icon: <SiShadcnui size={30} className="text-gray-400" />,
-      name: "ShadCN UI",
-    },
-  ];
-
   return (
     <>
       <Link
@@ -200,7 +131,7 @@ export default function ViandaSaludableProject() {
           <div className="w-full xl:w-1/2 z-10">
             <Carousel className="w-full m-auto max-w-xl">
               <CarouselContent>
-                {projectImages.map((img, index) => (
+                {pcImages.map((img, index) => (
                   <CarouselItem key={index}>
                     <Card className="bg-slate-50 border-none shadow-none">
                       <CardContent className="p-0 flex items-center justify-center">

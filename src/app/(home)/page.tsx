@@ -2,8 +2,8 @@ import Navbar from "@/components/navigation/Navbar";
 import AboutMe from "./_components/aboutMe/AboutMe";
 import Contact from "./_components/contact/Contact";
 import Header from "./_components/header/Header";
-import ViandasSaludables from "./_components/proyects/ViandasSaludables";
-import VitalityGym from "./_components/proyects/VitalityGym";
+import ViandasSaludables from "./_components/proyects/viandas-saludables/ViandasSaludables";
+import VitalityGym from "./_components/proyects/vitality-gym/VitalityGym";
 
 export default function Home() {
   return (

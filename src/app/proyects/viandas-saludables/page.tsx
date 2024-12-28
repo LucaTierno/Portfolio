@@ -9,65 +9,16 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
-import {
-  SiJavascript,
-  SiNextdotjs,
-  SiPrisma,
-  SiRailway,
-  SiShadcnui,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
-import { FaCarrot, FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { FaCarrot } from "react-icons/fa";
 import { FaArrowLeftLong } from "react-icons/fa6";
 
+//? Importación de las tecnologías utilizadas en el proyecto
+import { techs } from "./_components/Techs";
+
+//? Importación de las imágenes del proyecto
+import { pcImages } from "./_components/proyectImages";
+
 export default function ViandaSaludableProject() {
-  const projectImages = [
-    "/img/viandas-saludables/pc-login.png",
-    "/img/viandas-saludables/pc-panel-control.png",
-    "/img/viandas-saludables/pc-dishes.png",
-    "/img/viandas-saludables/pc-menus.png",
-    "/img/viandas-saludables/pc-delivery.png",
-    "/img/viandas-saludables/pc-clients.png",
-    "/img/viandas-saludables/pc-ingredients.png",
-    "/img/viandas-saludables/pc-list-buy.png",
-    "/img/viandas-saludables/pc-home.png",
-  ];
-
-  const techs = [
-    { icon: <SiNextdotjs size={30} className="text-black" />, name: "Next.js" },
-    {
-      icon: <SiJavascript size={30} className="text-[#F7DF1E] bg-black" />,
-      name: "JavaScript",
-    },
-    {
-      icon: <SiTypescript size={30} className="text-[#3178C6]" />,
-      name: "TypeScript",
-    },
-    { icon: <SiPrisma size={30} className="text-[#2D3748]" />, name: "Prisma" },
-    {
-      icon: <FaNodeJs size={30} className="text-[#339933]" />,
-      name: "Node.js",
-    },
-    {
-      icon: <SiTailwindcss size={30} className="text-[#06B6D4]" />,
-      name: "Tailwind CSS",
-    },
-    {
-      icon: <SiRailway size={30} className="text-[#0B0D0E]" />,
-      name: "Railway",
-    },
-    {
-      icon: <BiLogoPostgresql size={40} className="text-[#336791]" />,
-      name: "PostgreSQL",
-    },
-    {
-      icon: <SiShadcnui size={30} className="text-gray-400" />,
-      name: "ShadCN UI",
-    },
-  ];
-
   return (
     <>
       <Link
@@ -167,7 +118,7 @@ export default function ViandaSaludableProject() {
           <div className="w-full xl:w-1/2 z-10">
             <Carousel className="w-full m-auto max-w-xl">
               <CarouselContent>
-                {projectImages.map((img, index) => (
+                {pcImages.map((img, index) => (
                   <CarouselItem key={index}>
                     <Card className="bg-slate-50 border-none shadow-none">
                       <CardContent className="p-0 flex items-center justify-center">
