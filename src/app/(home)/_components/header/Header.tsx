@@ -23,7 +23,7 @@ export default function Header() {
         <h1 className="text-5xl md:text-8xl lg:text-9xl text-neutral-900 flex flex-col font-semibold">
           <span className="bg-green-500 pr-2 text-white">Desarrollador</span>
           <span className="relative">
-            Frontend{" "}
+            Full Stack{" "}
             <Link
               href="https://drive.google.com/file/d/1eHQKzcy2l4QEi_6TWn7GAW4YPX-1u-mm/view?usp=sharing"
               target="_blank"

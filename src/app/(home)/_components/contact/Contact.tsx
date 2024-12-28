@@ -12,8 +12,7 @@ export default function Contact() {
   return (
     <div className="max-w-3xl px-[20px] xl:px-0">
       <p className="font-medium text-base md:text-lg text-neutral-500">
-        Buscando oportunidades que me permitan aportar mi experiencia y seguir
-        aprendiendo en el proceso.
+        Buscando oportunidades que me permitan aportar mi experiencia.
       </p>
       <div className="mt-6">
         <a

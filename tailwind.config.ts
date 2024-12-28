@@ -77,7 +77,7 @@ const config: Config = {
   				'50%': {
   					transform: 'rotate(5deg)'
   				}
-  			}
+  			},
   		},
   		animation: {
   			scroll: 'scroll 1.5s ease-in-out infinite',
